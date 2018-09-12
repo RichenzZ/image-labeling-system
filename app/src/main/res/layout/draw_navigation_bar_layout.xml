@@ -1,0 +1,240 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="312px"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+    <LinearLayout
+                  android:layout_width="312px"
+                  android:layout_height="match_parent"
+                  android:background="#f4ba30"
+                  android:orientation="vertical">
+
+
+
+        <View android:layout_width="match_parent" android:layout_height="1px"
+              android:background="#11161d"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/line"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView android:id="@+id/rectIconCar"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:background="@drawable/car"
+                    android:scaleType="fitXY" android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rect"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView android:id="@+id/rectIconPerson"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:background="@drawable/person"
+                    android:scaleType="fitXY" android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1px"
+              android:background="#11161d"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/draw_selector_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/actionbar_ic_delete" />
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/rider"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/draw_selector_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/rider" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1px"
+              android:background="#11161d"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView android:id="@+id/back"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/back"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView android:id="@+id/forward"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/forward"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <View android:layout_width="match_parent" android:layout_height="1px"
+              android:background="#11161d"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView android:id="@+id/paint"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerInParent="true"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/brush"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView android:id="@+id/erase"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/erasor"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1px"
+              android:background="#11161d"/>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView android:id="@+id/lineIcon"
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/line"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <View android:layout_width="match_parent" android:layout_height="1px"
+              android:background="#11161d"/>
+
+
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:orientation="horizontal">
+            <TextView
+                android:id="@+id/modeText"
+                android:layout_width="314px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/textOne"
+                android:layout_toRightOf="@+id/textOne"
+                android:textColor="#EA5246"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

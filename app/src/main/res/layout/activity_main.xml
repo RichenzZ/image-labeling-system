@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="312px"
+        android:layout_marginTop="107px"
+        android:background="#ffffff">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/foregroundView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+    <!--<com.dongwen.cn.electricity.view.DrawCanvasView-->
+    <!--android:id="@+id/canvas_view" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--</com.dongwen.cn.electricity.view.DrawCanvasView>-->
+
+    <include
+        android:id="@+id/draw_navigation_bar"
+        layout="@layout/draw_navigation_bar_layout" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="107px"
+        android:layout_gravity="top|right"
+        android:layout_marginLeft="312px"
+        android:background="#303a9f"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="107px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="#e4a726"
+                android:text="L"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/button"
+                android:layout_toRightOf="@+id/button"
+                android:background="#e4a726"
+                android:text="REset"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/send_request"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/button4"
+                android:layout_toRightOf="@+id/button4"
+                android:background="#e4a726"
+                android:text="SR"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/curve_only"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/button4"
+                android:layout_toRightOf="@+id/button4"
+                android:background="#e4a726"
+                android:text="CR"
+                android:textColor="#ffffff" />
+
+
+            <TextView
+                android:id="@+id/textOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/curve_only"
+                android:layout_toRightOf="@+id/curve_only"
+                android:text="MODE:"
+                android:textColor="#EA5246"
+                android:textStyle="bold|italic"
+                android:visibility="gone"/>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Thickness"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RadioButton
+                    android:id="@+id/thickness1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="@android:color/background_light">
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/thickness2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:checked="true"
+                    android:textColor="@android:color/background_light">
+
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/thickness3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="130"
+                    android:textColor="@android:color/background_light">
+
+                </RadioButton>
+            </RadioGroup>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/linearlayout"
+            android:background="#11161d" />
+
+
+    </RelativeLayout>
+</FrameLayout>
